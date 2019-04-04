@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fcfcfc;
+}
+
+header {
+  height: 7vw;
+}
+
+nav {
+  position: relative;
+  padding: 1.5em 10%;
+  animation-name: slideIn;
+  animation-duration: 800ms;
+  background-color: #fcfcfc;
+
+
+}
+
+@keyframes slideIn {
+  0% {
+    top: -2.5vw;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+
+
+nav .logo {
+  font-size: 1.5vw;
+  font-weight: 400;
+  color: rgb(31, 31, 31);
+  letter-spacing: 0.15em;
+}
+
+
+/* Burger menu
+-----------------------------*/
+.burger-icon {
+  width: 8vw;
+  float: right;
+  margin: 0 1vw;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+right: 0;
+  background-color: #fcfcfc;
+  overflow-x: hidden;
+  transition: 0.3s;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+}
+
+.sidenav a {
+ text-decoration: none;
+  font-size: 5vw;
+  font-weight: 400;
+  color: #414141;
+  display: block;
+  text-align: center;
+  padding: 5vw;
+  
+}
+
+
+.sidenav .closebtn {
+  position: relative;
+  color: #fff;
+ 
+  font-weight: 400;
+  padding-left: 2vw;
+  transition: 0.15s;
+  text-align: right;
+}
+
+.logo-burger{
+  padding-top:6vw;
+  padding-left: 2.5em;
+  padding-bottom: 2em;
+  color: #fff;
+}
+
+
+/* burger menu ends here*/
+
+
+
+.pages {
+  font-size: 1.2vw;
+  font-weight: 300;
+  color: rgb(90, 90, 90);
+  margin: 0 1vw;
+  float: right;
+  position: relative;
+}
+
+.pages::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0FCF9B;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in;
+}
+
+.pages:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.active {
+  color: rgb(31, 31, 31);
+  font-weight: 400;
+}
+
+
+
+#caseStudy,
+#about {
+  margin-top: 7vw;
+  padding: 0 10%;
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.centeredText {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2vw;
+  padding-bottom: 2vw;
+}
+
+.soon { margin-top: 10vw;}
+.about {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1vw;
+  font-weight: 300;
+}
+
+
+
+
+#caseStudy p {
+  font-size: 1.12vw;
+  font-weight: 400;
+  color: #181818;
+}
+
+.display h2 {
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 2vw;
+}
+
+.display h4 {
+  margin: auto;
+  text-align: center;
+  color: #353434;
+  font-weight: 400;
+  font-size: 1.3vw;
+  width: 60%;
+}
+
+.banner {
+  text-align: center;
+  margin: 5vw auto;
+}
+
+
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.overviewCont {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  color: #0f0f0f;
+  margin-bottom: 3vw;
+}
+
+.overview {
+  grid-column: 1/4;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.overview h3,
+.finalResult h3 {
+  margin-bottom: 1.5vw;
+  font-size: 1.7vw;
+  font-weight: 400;
+
+}
+
+.specs {
+  grid-column: 5/7;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin-top: 2vw;
+}
+
+.specs p {
+  grid-column: 2/5;
+}
+
+.specs strong {
+  grid-column: 1/1;
+  font-size: 1.2vw;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5vw;
+  grid-column-gap: 3vw;
+  grid-column: 1/7;
+  line-height: 1.8;
+}
+
+.description h3 {
+  font-weight: 400;
+}
+
+.line {
+  margin-bottom: 1.5vw;
+  width: 3vw;
+  border-bottom: rgb(39, 168, 147) 1px solid;
+}
+
+.description h4 {
+  font-size: 1.5vw;
+  font-weight: 300;
+  line-height: 1.2vw;
+}
+
+
+.left {
+  display: grid;
+  grid-column: 1/2;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 4vw;
+}
+
+.right {
+  display: grid;
+  grid-column: 2/3;
+  grid-row-gap: 4vw;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+
+
+.fadeInUp-scroll.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: all ease-in 1s;
+}
+
+.finalResult {
+  margin-top: 8vw;
+
+}
+
+.finalResult .description-box {
+  margin: 5vw auto;
+  text-align: center;
+  width: 70%;
+}
+
+
+footer {
+  text-align: center;
+  margin: 5vw 0 ;
+
+}
+
+.img-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 6vw;
+
+}
+
+.img-grid img {
+  align-self: center;
+}
+
+.social {
+  padding: 2vw 1vw;
+}
+
+footer a {
+  font-weight: 400;
+  color: rgb(168, 168, 168);
+
+}
+
+footer h3 {
+  padding-bottom: 2vw;
+}
+
+.projectLink a {
+  margin: 2vw 1vw;
+}
+
+footer a:hover {
+  color: rgb(31, 31, 31);
+}
+
+
+
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.8s ease;
+  overflow: hidden;
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+
+.go-top {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  text-decoration: none;
+  padding: 1em;
+  display: none;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  color: #6d6d6d;
+}
+
+
+
+
+
+@media (max-width:599px) {
+  .hidden-s {
+    display: none;
+  }
+
+  nav .logo {
+    font-size: 5vw;
+  }
+
+  .display h2 {
+    font-size: 6vw;
+  }
+
+  #caseStudy  {
+    margin-top: 20vw;
+  }
+
+  #caseStudy p {
+    font-size: 4vw;
+    width: 100%;
+  }
+
+  #caseStudy, #about { padding: 0 5%;}
+
+  .finalResult .description-box {
+    width: 100%;
+    margin: 5vw auto 10vw;
+  }
+
+  .overview h3,
+  .finalResult h3,
+  .description h3 {
+    font-size: 5vw;
+  }
+
+  .overview {
+    grid-column: 1/7;
+    text-align: center;
+  }
+  .specs { grid-column: 1/7;}
+  .projectLink a{ display: block;}
+  footer {margin: 10vw 0;}
+}
+
+@media (min-width:600px) and (max-width:899px){
+  .hidden-l {display: none;}
+}
+
+@media (min-width:900px){	
+  .hidden-l {display: none;}
+}

@@ -1,0 +1,71 @@
+#about {
+  margin-top: 2vw;
+}
+
+.skills {
+  grid-column: 5/7;
+  margin-top: 5vw;
+}
+
+.skills p {
+  padding: 0.5vw 0 2vw 0;
+}
+
+.skills strong {
+  grid-column: 1/1;
+  font-size: 1.2vw;
+  font-weight: 600;
+  padding: 2vw 0;
+  text-transform: uppercase;
+}
+
+.contact {
+  grid-column: 1/7;
+  text-align: center;
+  padding-top: 6vw;
+}
+
+
+.contact a {
+  color:  rgb(39, 168, 147);
+}
+
+address {
+  font-style: unset;
+}
+
+
+footer {
+  margin: 5vw 0 0;
+  text-align: center;
+  font-weight: 300;
+
+}
+
+footer a {
+  padding: 0.5vw;
+  margin: 0 1vw;
+}
+.social img {height: 20px;}
+
+footer h3 {
+  padding-bottom: 1vw;
+}
+
+@media (max-width:599px) {
+  #about {
+    margin-top: 20vw;
+  }
+
+  .skills {
+    grid-column: 1/7;
+    text-align: center;
+  }
+  
+  footer {margin: 10vw 0 ;}
+
+  footer a {
+    margin: 0 3vw;
+  }
+  .skills strong{ font-size: 4vw;}
+}

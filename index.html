@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ELINA EIHVALDE</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet">
+
+    <link href="index_styles.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+
+    <header class="index">
+
+        <nav >
+            <a class="logo" href="index.html">ELINA EIHVALDE</a>
+            <a class="pages hidden-s" href="Elina_Eihvalde_Resume.pdf" target="_blank">Resume</a>
+            <a class="pages hidden-s" href="about.html">About</a>
+            <a class="pages  hidden-s active"  href="#indexPage">Work</a>
+
+            <span class="hidden-l">
+                
+                    <span class="burger" onclick="openNav()" ><img src="images/sharp-menu-24px.svg" class=" burger-icon" onclick="openNav()" > </span>
+
+                    <div id="sidenav" class="sidenav" onclick="closeNav()">
+                           
+                       
+                        <a href="javascript:void(0)" class="closebtn onclick="closeNav()"" ><img src="images/sharp-arrow_forward-24px.svg">
+                                
+                                </a>
+    
+                        <a class="nav" href="index.html#indexPage">Work</a>
+                        <a class="nav no-bord" href="about.html">About</a>
+                        <a class="nav" href="Elina_Eihvalde_Resume.pdf"> Dowload my resume</a>
+            
+                    </span>
+        </nav>
+
+        <section class="landing" >
+        
+            <div class="landing-text">
+                <h1>Hey, I'm Elina! <span class="mint">UX/UI </span> designer in training.</h1>
+                <h4>I enjoy creating <span class="mint"> user centered</span> designs and working <br> with <span class="mint">front-end
+                        development</span>.</h4>
+
+            </div>
+
+        </section>
+
+    </header>
+
+
+    <main id="app">
+
+        <grid-display> </grid-display>
+
+
+
+    </main>
+
+    <footer>
+        <h3>Find more about me at these places.</h3>
+        <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=100000718666501&ref=bookmarks" target="_blank"><img src="images/facebook-f-brands dark.svg" ></a>
+            <a href="https://www.linkedin.com/in/el%C4%ABna-eihvalde-821ba6161/" target="_blank"><img src="images/linkedin-in-brands dark.svg"></a>
+            <a href="https://www.freecodecamp.org/elinaeihvalde" target="_blank"><img src="images/free-code-camp-brands dark.svg" ></a>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="vue.js"></script>
+    <script src="mainJS.js"></script>
+    
+</body>
+
+</html>
